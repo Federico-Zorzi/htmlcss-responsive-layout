@@ -47,7 +47,6 @@ hr {
 
 .container {
   margin: 0 1.5rem;
-  padding: 0rem 1.5rem;
   max-width: 100%;
 }
 
@@ -108,6 +107,7 @@ hr {
 
 #dessert-tutorial .container h1 {
   color: #4e3969;
+  font-weight: bold;
   margin: 10px 0 20px;
 }
 
@@ -184,8 +184,11 @@ hr {
   padding: 2rem 0;
 }
 
-.ft-links {
+.address-links {
   text-align: center;
+}
+
+.ft-links {
   line-height: 2rem;
 }
 
@@ -200,6 +203,62 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  .d-md-inline {
+    display: inline;
+  }
+
+  .container {
+    margin: 0 3rem;
+  }
+
+  .logo {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .video-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .video-description li {
+    width: calc(100% / 3);
+  }
+
+  .btn {
+    width: calc(100% / 5);
+    border-radius: 30px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .presentation h2 {
+    margin: 1rem 0;
+  }
+
+  .presentation-image {
+    float: left;
+    margin: 1rem 1rem 0 0;
+  }
+
+  .presentation p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
 }
 
 @media screen and (min-width: 992px) {
