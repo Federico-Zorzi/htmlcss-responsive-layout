@@ -22,7 +22,9 @@ ul {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 main {
@@ -200,6 +202,27 @@ hr {
 /* MEDIA QUERY */
 
 @media screen and (min-width: 576px) {
+  .presentation-image {
+    float: left;
+    margin: 1rem 1rem 0 0;
+  }
+
+  .btn {
+    width: calc(100% / 5);
+    border-radius: 30px;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+
+  #facebook,
+  #twitter,
+  #instagram,
+  #pinterest,
+  #youtube {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -228,6 +251,10 @@ hr {
     padding-left: 1rem;
   }
 
+  #dessert-tutorial .container h1 {
+    font-size: 1.8rem;
+  }
+
   .video-description {
     display: flex;
     flex-wrap: wrap;
@@ -237,29 +264,70 @@ hr {
     width: calc(100% / 3);
   }
 
-  .btn {
-    width: calc(100% / 5);
-    border-radius: 30px;
-  }
-
-  .social-icons {
-    gap: 15px;
-  }
-
   .presentation h2 {
-    margin: 1rem 0;
-  }
-
-  .presentation-image {
-    float: left;
-    margin: 1rem 1rem 0 0;
+    margin: 2rem 0 1rem;
   }
 
   .presentation p {
     font-size: 1rem;
     line-height: 25px;
   }
+
+  .address-links {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-block {
+    display: block;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .d-lg-inline {
+    display: inline;
+  }
+
+  #dessert-tutorial .container h1 {
+    font-size: 2rem;
+  }
+
+  .card-video {
+    width: 70%;
+  }
+
+  .card-description {
+    width: 30%;
+  }
+
+  .video-description li {
+    width: 100%;
+  }
+
+  .btn p {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .address-links {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .address-links {
+    text-align: left;
+  }
+
+  .ft-links-items {
+    text-decoration: underline;
+    margin: 0 5px;
+  }
 }
