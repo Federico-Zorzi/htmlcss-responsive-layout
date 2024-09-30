@@ -21,18 +21,12 @@ ul {
   list-style-type: none;
 }
 
-li {
-  display: inline;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   background-color: #f6f5f3;
-  /* debug */
-  min-height: 400px;
 }
 
 footer {
@@ -44,11 +38,16 @@ span {
   font-weight: bold;
 }
 
+hr {
+  width: 5rem;
+  color: #f7972e;
+}
+
 /* # UTILS */
 
 .container {
   margin: 0 1.5rem;
-  padding: 1.5rem 1.5rem;
+  padding: 0rem 1.5rem;
   max-width: 100%;
 }
 
@@ -71,15 +70,21 @@ span {
   display: flex;
 }
 
+.d-inline {
+  display: inline;
+}
+
 .btn {
   background-color: white;
   padding: 0.7rem 1rem;
   border-radius: 50%;
+  box-shadow: 2px 3px 10px #cecece;
 
   cursor: pointer;
 }
 
 /* HEADER */
+
 .logo {
   font-family: "Nerko One", cursive;
   font-weight: 400;
@@ -90,11 +95,38 @@ span {
 
   padding: 0.5rem 0;
 }
+
 /* MAIN */
 
+#dessert-tutorial .container .page-subtitle {
+  color: #b19999;
+  font-size: 0.9rem;
+  font-weight: normal;
+
+  padding-top: 20px;
+}
+
+#dessert-tutorial .container h1 {
+  color: #4e3969;
+  margin: 10px 0 20px;
+}
+
 .card-description {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   background-color: white;
+  box-shadow: 2px 3px 10px #cecece;
+}
+
+.card-description h2 {
+  font-size: 1.2rem;
+}
+
+.video-description {
+  padding: 1.5rem 0 0;
+}
+
+.video-description li {
+  line-height: 2rem;
 }
 
 .video-item {
@@ -127,8 +159,15 @@ span {
   margin-bottom: 2rem;
 }
 
+.presentation h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
 .presentation-image {
-  margin: 1rem 0;
+  height: 200px;
+  margin: 1rem auto;
 }
 
 .presentation p {
