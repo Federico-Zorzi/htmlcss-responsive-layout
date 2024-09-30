@@ -114,7 +114,7 @@ hr {
 }
 
 .card-description {
-  padding: 2rem 1.5rem;
+  padding: 2rem 2rem;
   background-color: white;
   box-shadow: 2px 3px 10px #cecece;
 }
@@ -158,7 +158,7 @@ hr {
 }
 
 .presentation {
-  margin-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .presentation h2 {
@@ -258,6 +258,7 @@ hr {
   .video-description {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem 0;
   }
 
   .video-description li {
@@ -293,6 +294,10 @@ hr {
 
   .d-lg-inline {
     display: inline;
+  }
+
+  .container {
+    margin: 0 8rem;
   }
 
   #dessert-tutorial .container h1 {
