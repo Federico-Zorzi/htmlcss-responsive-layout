@@ -21,12 +21,28 @@ ul {
   list-style-type: none;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #f6f5f3;
+  /* debug */
+  min-height: 400px;
+}
+
+footer {
+  background-color: #7c69a4;
+
+  /* debug */
+  min-height: 400px;
+}
+
 /* # UTILS */
 
 .container {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 1000px;
+  margin: 0 1.5rem;
+  padding: 1.5rem 1.5rem;
   max-width: 100%;
 }
 
@@ -35,4 +51,81 @@ ul {
   content: "";
   display: block;
   clear: both;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* HEADER */
+.logo {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ff9614;
+
+  padding: 1rem 0;
+}
+/* MAIN */
+
+.card-description {
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.video-item {
+  width: 100%;
+}
+
+.social-icons {
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+#facebook {
+  color: #035ca5;
+}
+
+#twitter {
+  color: #74c0fc;
+}
+
+#instagram {
+  color: #ff55ff;
+}
+
+#pinterest,
+#youtube {
+  color: red;
+}
+
+/* FOOTER */
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
 }
